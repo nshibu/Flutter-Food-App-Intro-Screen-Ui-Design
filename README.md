@@ -7,4 +7,4 @@ This project uses,
 
 ## Screenshot
 
-<img src="https://raw.githubusercontent.com/nshibu/Flutter-Food-App-Intro-Screen-Ui-Design/master/images/screenshot.pngo" alt="Flutter Food App Intro Screen Ui Design" width="400" height="700">
+<img src="https://raw.githubusercontent.com/nshibu/Flutter-Food-App-Intro-Screen-Ui-Design/master/images/screenshot.png" alt="Flutter Food App Intro Screen Ui Design" width="400" height="700">
