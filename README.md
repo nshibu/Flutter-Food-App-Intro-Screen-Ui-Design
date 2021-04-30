@@ -7,4 +7,4 @@ This project uses,
 
 ## Screenshot
 
-![ Flutter Food App Intro Screen Ui Design](https://github.com/nshibu/Flutter-Food-App-Intro-Screen-Ui-Design/blob/master/images/screenshot.png?raw=true)
+<img src="https://raw.githubusercontent.com/nshibu/Flutter-Food-App-Intro-Screen-Ui-Design/master/images/screenshot.pngo" alt="Flutter Food App Intro Screen Ui Design" width="400" height="700">
