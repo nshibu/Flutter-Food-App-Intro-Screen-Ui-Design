@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import 'data.dart';
 
-
 class Intro extends StatefulWidget {
   final List<Food> imgModel;
 
@@ -42,8 +41,8 @@ class _IntroState extends State<Intro> {
                       ),
                       child: Image.asset(
                         widget.imgModel[_selectedIndex].img,
-                        height: MediaQuery.of(context).size.height * 0.45,
-                        width: MediaQuery.of(context).size.width * 0.8,
+                        height: MediaQuery.of(context).size.height * 0.48,
+                        width: MediaQuery.of(context).size.width * 0.85,
                       ),
                     ),
                     Container(
@@ -52,9 +51,13 @@ class _IntroState extends State<Intro> {
                           itemCount: widget.imgModel.length,
                           shrinkWrap: true,
                           scrollDirection: Axis.horizontal,
-                          physics: BouncingScrollPhysics(),
+                          physics: BouncingScrollPhysics(
+                              parent: AlwaysScrollableScrollPhysics()),
                           itemBuilder: (context, index) {
-                            return InkWell(
+                            return GestureDetector(
+                              onTap: () {
+                                _updateIndex(index);
+                              },
                               child: Container(
                                 margin: EdgeInsets.only(left: 15.0),
                                 decoration: BoxDecoration(
@@ -75,9 +78,6 @@ class _IntroState extends State<Intro> {
                                   ),
                                 ),
                               ),
-                              onTap: () {
-                                _updateIndex(index);
-                              },
                             );
                           }),
                     )
