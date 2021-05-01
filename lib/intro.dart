@@ -51,8 +51,6 @@ class _IntroState extends State<Intro> {
                           itemCount: widget.imgModel.length,
                           shrinkWrap: true,
                           scrollDirection: Axis.horizontal,
-                          physics: BouncingScrollPhysics(
-                              parent: AlwaysScrollableScrollPhysics()),
                           itemBuilder: (context, index) {
                             return GestureDetector(
                               onTap: () {
